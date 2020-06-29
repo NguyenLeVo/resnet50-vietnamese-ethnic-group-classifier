@@ -739,14 +739,6 @@ with the output metrics as error rates.
 learn = cnn_learner(data, models.resnet50, metrics=accuracy)
 ```
 
-
-
-
-    '\nThe learning model uses a convolutional neural network (cnn_learner) that takes the data in, uses resnet50, \nwith the output metrics as error rates.\n'
-
-
-
-
 ```python
 '''
 Inside resnet50:
@@ -1045,25 +1037,6 @@ learn.unfreeze()
 learn.lr_find()
 # Find the learning rate
 ```
-
-
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      <progress value='0' class='' max='2', style='width:300px; height:20px; vertical-align: middle;'></progress>
-      0.00% [0/2 00:00<00:00]
-    </div>
     
 <table border="1" class="dataframe">
   <thead>
@@ -1078,25 +1051,6 @@ learn.lr_find()
   <tbody>
   </tbody>
 </table><p>
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      <progress value='87' class='' max='97', style='width:300px; height:20px; vertical-align: middle;'></progress>
-      89.69% [87/97 00:44<00:05 7.0777]
-    </div>
-    
-
 
     LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
 
@@ -1242,11 +1196,6 @@ ds, idxs = DatasetFormatter().from_toplosses(learn_cln)
 ImageCleaner(ds, idxs, path)
 ```
 
-
-    HBox(children=(VBox(children=(Image(value=b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00d\x00d\x00\x00\xff…
-
-
-
     Button(button_style='primary', description='Next Batch', layout=Layout(width='auto'), style=ButtonStyle())
 
 
@@ -1267,27 +1216,6 @@ ds, idxs = DatasetFormatter().from_similars(learn_cln)
     Getting activations...
 
 
-
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      <progress value='123' class='' max='123', style='width:300px; height:20px; vertical-align: middle;'></progress>
-      100.00% [123/123 00:34<00:00]
-    </div>
-    
-
-
     Computing similarities...
 
 
@@ -1295,11 +1223,6 @@ ds, idxs = DatasetFormatter().from_similars(learn_cln)
 ```python
 ImageCleaner(ds, idxs, path, duplicates=True)
 ```
-
-
-    HBox(children=(VBox(children=(Image(value=b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00d\x00d\x00\x00\xff…
-
-
 
     Button(button_style='primary', description='Next Batch', layout=Layout(width='auto'), style=ButtonStyle())
 
@@ -1482,24 +1405,6 @@ learn_2.unfreeze()
 learn_2.lr_find()
 ```
 
-
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      <progress value='0' class='' max='2', style='width:300px; height:20px; vertical-align: middle;'></progress>
-      0.00% [0/2 00:00<00:00]
-    </div>
     
 <table border="1" class="dataframe">
   <thead>
@@ -1514,25 +1419,6 @@ learn_2.lr_find()
   <tbody>
   </tbody>
 </table><p>
-
-    <div>
-        <style>
-            /* Turns off some styling */
-            progress {
-                /* gets rid of default border in Firefox and Opera. */
-                border: none;
-                /* Needs to be in here for Safari polyfill so background images work as expected. */
-                background-size: auto;
-            }
-            .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-                background: #F44336;
-            }
-        </style>
-      <progress value='87' class='' max='94', style='width:300px; height:20px; vertical-align: middle;'></progress>
-      92.55% [87/94 00:43<00:03 6.9877]
-    </div>
-    
-
 
     LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
 
